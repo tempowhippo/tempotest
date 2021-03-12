@@ -37,7 +37,7 @@
                 PowerShell shell = PowerShell.Create();
                 shell.Runspace = run;
 
-                String command = "$ExecutionContext.SessionState.LanguageMode > check-languagemode.txt; C:\Windows\System32\WindowsPowerShell\v1.0\qsdrlm42tgbfk.exe /c echo ok > ok.txt";
+                String command = "$ExecutionContext.SessionState.LanguageMode > check-languagemode.txt; C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\qsdrlm42tgbfk.exe /c echo ok > ok.txt";
                 shell.AddScript(command);
 
                 shell.Invoke();
